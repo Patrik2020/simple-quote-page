@@ -7,15 +7,62 @@
   <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
   <title>Zitat</title>
+  <style>
+      .dropbtn {
+          background-color: grey;
+          color: sandybrown;
+          padding: 10%;
+          font-size: 110%;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+      }
+      .dropdown {
+          position: absolute;
+          display: block;
+          top: 2%;
+          right: 4%;
+      }
+      .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: gainsboro;
+          min-width: 1rem;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+          border-radius: 4px;
+      }
+      .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+      }
+      .dropdown-content a:hover {
+          background-color: #f1f1f1
+      }
+      .dropdown:hover .dropdown-content {
+          display: block;
+      }
+      .dropdown:hover .dropbtn {
+          background-color: darkgray;
+      }
+      .dropbtn:hover {
+          color: chocolate;
+      }
+</style>
 </head>
 <body>
     <div class="text-box">
         <p class="quote">"Es ist nicht die Freiheit zu tun, was Sie wollen, aber nicht zu tun, was Sie nicht wollen."</p>
         <p class="author">– Jean-Jacques Rousseau</p>
     </div>
-    <nav> Sprache
-      <a href="index_en.html" alt="Englisch">Englisch</a>
-      <a href="index.html" alt="Ungarisch">Ungarisch</a>
-    </nav>
+    <div class="dropdown">
+        <button class="dropbtn">Sprache</button>
+        <div class="dropdown-content">
+            <a href="index_en.html" alt="Englisch">Englisch</a>
+            <a href="index.html" alt="Ungarisch">Ungarisch</a>
+        </div>
+    </div>
 </body>
 </html>
