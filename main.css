@@ -26,25 +26,55 @@ a {
     text-decoration: none;
     color: black;
 }
-.drobtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-}
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
+.dropbtn {
+          background-color: ;
+          color: #3333ff;
+          width: 8rem;
+          height: 3rem;
+          font-size: 150%;
+          border: solid grey 1px;
+          border-radius: 9999px;
+          cursor: pointer;
+          font-style: italic;
+          font-family:inherit;
+          letter-spacing: .1rem;
+      }
+.dropup {
+          position: absolute;
+          display: block;
+          bottom: 2%;
+          right: 2%;
+      }
+.dropup-content {
+          display: none;
+          position: absolute;
+          background-color: gainsboro;
+          min-width: 1rem;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          bottom: 3.04rem;
+          left: .8rem;
+          z-index: 1;
+          border-radius: 20px;
+      }
+.dropup-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          border-radius: 9999px;
+      }
+.dropup-content a:hover {
+          background-color: #f1f1f1;
+      }
+.dropup:hover .dropup-content {
+          display: block;
+      }
+.dropup:hover .dropbtn {
+          background-color: darkgray;
+      }
+.dropbtn:hover {
+          color: #3333ff;
+      }
 @media screen and (max-width: 1280px) {
     .quote {
         font-size: 1.8rem;
